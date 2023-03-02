@@ -13,6 +13,7 @@ A generalization of the SSRPs called "Cascade SSRPs" was presented in:
 Using those previous results in
 * https://www.nature.com/articles/s41598-018-28962-1
 * https://arxiv.org/abs/1706.10202 (PrePrint)
+
 was studied how driving rates determine the statistics of driven non-equilibrium systems with stationary distributions.
 
 ## Numerical Simulation
