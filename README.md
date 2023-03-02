@@ -23,7 +23,7 @@ Using those previous results in
 was studied how driving rates determine the statistics of driven non-equilibrium systems with stationary distributions.
 
 ## Numerical Simulation
-The file cascadeSSRP.cpp contains a numerical simulation of a cascade SSRP and is executed by the script simulation.py which compare the numerical simulation with theorical predictions reproducing the results in Figure 2(b) of the article:
+The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of the article:
 
 * https://www.nature.com/articles/s41598-018-28962-1
 
