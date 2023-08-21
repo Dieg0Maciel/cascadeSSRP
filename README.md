@@ -6,7 +6,7 @@
 ## References
 Sample space reducing processes(SSRPs) are processes that reduce their sample space as they progress over time. They where first studied in:
 * [Corominas-Murtra, Bernat, Rudolf Hanel, and Stefan Thurner. "Understanding scaling through history-dependent processes with collapsing sample space." Proceedings of the National Academy of Sciences 112.17 (2015): 5348-5353.](https://www.pnas.org/doi/abs/10.1073/pnas.1420946112)
-* https://arxiv.org/abs/1407.2775 (PrePrint)
+* [Corominas-Murtra, Bernat, Rudolf Hanel, and Stefan Thurner. "Understanding scaling through history-dependent processes with collapsing sample space." arXiv preprint arXiv:1407.2775 (2014).](https://arxiv.org/abs/1407.2775) (PrePrint)
 
 A generalization of the SSRPs called "Cascade SSRPs" was presented in:
 * https://www.nature.com/articles/s41598-017-09836-4
