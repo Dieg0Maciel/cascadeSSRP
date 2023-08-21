@@ -1,4 +1,4 @@
-# cascadeSSRP
+# Numerical simulation of sample space reducing processes
 ## Sample space reducing processes(SSRPs) 
 
 Sample space reducing processes(SSRPs) are processes that reduce their sample space as they progress over time. They where first studied in:
