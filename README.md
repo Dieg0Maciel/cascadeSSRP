@@ -3,6 +3,13 @@
 Sample Space Reducing Processes reduce their sample space as they progress over time. We can
 use the following diagram to give a simple representation of them
 
+[]()
+
+* In (a) a ball bounces downwards a staircase with N = 10 stairs (states). At each timestep the ball randomly choses one of the stairs below its current position. In this
+picture the prior probability q_i. Once the ball reaches the lowest step, it is restarted.
+
+* In (b) we see the *cascading picture*,  whenever a ball hits a state i, it multiplies and creates λ(i) − 1 new balls, that start their downward moves independently. 
+
 
 ## References
 Sample space reducing processes(SSRPs) are processes that reduce their sample space as they progress over time. They where first studied in:
