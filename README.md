@@ -1,7 +1,7 @@
 # NUMERICAL SIMULATION OF SAMPLE SPACE REDUCING PROCESSES
 ## Overview
-Sample Space Reducing Processes reduce their sample space as they progress over time. They can
-be depicted by the following diagram
+Sample Space Reducing Processes reduce their sample space as they progress over time. We can
+use the following diagram to give a simple representation of them
 
 
 ## References
