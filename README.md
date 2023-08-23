@@ -1,7 +1,6 @@
 # NUMERICAL SIMULATION OF SAMPLE SPACE REDUCING PROCESSES
 ## Overview
-Sample Space Reducing Processes reduce their sample space as they progress over time. We can
-use the following diagram to give a simple representation of them
+Sample Space Reducing Processes (SSRPs) reduce their sample space as they progress over time. They where first studied in [`[1]`](https://www.pnas.org/doi/abs/10.1073/pnas.1420946112), a generalization of the SSRPs called "Cascade SSRPs" was presented in [`[2]`](https://www.nature.com/articles/s41598-017-09836-4).  In [`[3]`](https://www.nature.com/articles/s41598-018-28962-1)  were studied how driving rates determine the statistics of driven non-equilibrium systems with stationary distributions. We can use the following diagram to give a simple representation of SSRPs
 
 ![](/images/ssrp.png)
 
@@ -15,15 +14,12 @@ The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP whi
 
 
 ## References
-Sample space reducing processes(SSRPs) are processes that reduce their sample space as they progress over time. They where first studied in:
 * [`[1]`](https://www.pnas.org/doi/abs/10.1073/pnas.1420946112) Corominas-Murtra, Bernat, Rudolf Hanel, and Stefan Thurner. "Understanding scaling through history-dependent processes with collapsing sample space." Proceedings of the National Academy of Sciences 112.17 (2015): 5348-5353.
   - [Free arxiv preprint version](https://arxiv.org/abs/1407.2775) (PrePrint)
 
-A generalization of the SSRPs called "Cascade SSRPs" was presented in:
 * [`[2]`](https://www.nature.com/articles/s41598-017-09836-4) Corominas-Murtra, Bernat, Rudolf Hanel, and Stefan Thurner. "Sample space reducing cascading processes produce the full spectrum of scaling exponents." Scientific Reports 7.1 (2017): 11223.
   - [Free arxiv preprint version](https://arxiv.org/abs/1703.10100) (PrePrint)
 
-The cascade sample space reducing processes are studied in:
 * [`[3]`](https://www.nature.com/articles/s41598-018-28962-1) Corominas-Murtra, Bernat, et al. "How driving rates determine the statistics of driven non-equilibrium systems with stationary distributions." Scientific Reports 8.1 (2018): 10837.
   - [Free arxiv preprint version](https://arxiv.org/abs/1706.10202) (PrePrint)
 
