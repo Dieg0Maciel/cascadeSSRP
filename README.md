@@ -60,7 +60,7 @@ for(int i = 0; i < mu; i++){
 		stack.push_front(k);
 }
 ```
-Every time we reach ``k = 1`` the algorithm will check the stack to see if it is empty, in which case the function ``ssrp`` will stop. If the stack is not empty, we will pop a new value ``k`` from the top of the stack an continue. The simulation is implemented by the function ``simulation`` which runs the ``ssrp`` function ``numberOfRestarts``
+Every time we reach ``k = 1`` the algorithm will check the stack to see if it is empty, in which case the function ``ssrp`` will stop. If the stack is not empty, we will pop a new value ``k`` from the top of the stack an continue. The simulation is implemented by the function ``simulation`` which runs the ``ssrp`` function ``numberOfRestarts`` times
 ```
 std::vector<int> simulation(
     int numberOfStates, 
