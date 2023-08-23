@@ -14,6 +14,21 @@ In order to create an algorithm for the the reduction of the sample space we can
 
 ![](/images/biaseddice.png)
 
+The throwing of a biased dice is given by the function
+```
+int biasedCoin(double bias, std::mt19937& generator){
+    std::bernoulli_distribution flip(bias);
+    return flip(generator);
+}
+```
+And the slicing of the array of frequencies can be implemented with the function
+```
+std::vector<int> slice(std::vector<int>& v, int k){
+    std::vector<int> output(v.begin(), v.begin() + k + 1);
+    return output;
+}
+``
+
 The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of [this article](https://www.nature.com/articles/s41598-018-28962-1).
 
 
