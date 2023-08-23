@@ -10,7 +10,7 @@ picture the prior probability q_i. Once the ball reaches the lowest step, it is 
 * In (b) we see the *cascading picture*,  whenever a ball hits a state i, it multiplies and creates λ(i) − 1 balls, that start their downward moves independently. 
 
 ## Algorithm
-In order to create an algorithm for the the reduction of the sample space we can use the interpretation given by [`[1]`](https://www.pnas.org/doi/abs/10.1073/pnas.1420946112). Suppose we start with N = 20, we can think about this process as throwing a 20-faced biased dice (icosahedron). The probability distribution of the biased dice is given by an array of ´´frequencies´´ of 20 components. Suppose in the first throw we get a 13, the reducing of the sample space forces us to take the 12-faced dice (dodecahedron) and reduce of array of ´´frequencies´´ to a slice from ´´frequencies[0]´´ to ´´frequencies[13 - 1]´´. If in the next throw we get 9 we must continue with an 8-faced dice. If we throw a 7, that forces us to take the 6-faced dice. If the following throw gives a 5 we take a 4-faced. If the next throw we get a 3, it forces us to use a 2-faced dice (coin). The process ends when we throw a 1 for the first time.
+In order to create an algorithm for the the reduction of the sample space we can use the interpretation given by [`[1]`](https://www.pnas.org/doi/abs/10.1073/pnas.1420946112). Suppose we start with N = 20, we can think about this process as throwing a 20-faced biased dice (icosahedron). The probability distribution of the biased dice is given by an array of ``frequencies`` of 20 components. Suppose in the first throw we get a 13, the reducing of the sample space forces us to take the 12-faced dice (dodecahedron) and reduce of array of ``frequencies`` to a slice from ``frequencies[0]`` to ``frequencies[13 - 1]``. If in the next throw we get 9 we must continue with an 8-faced dice. If we throw a 7, that forces us to take the 6-faced dice. If the following throw gives a 5 we take a 4-faced. If the next throw we get a 3, it forces us to use a 2-faced dice (coin). The process ends when we throw a 1 for the first time.
 
 ![](/images/biaseddice.png)
 
@@ -28,7 +28,7 @@ std::vector<int> slice(std::vector<int>& v, int k){
     return output;
 }
 ```
-The array ´´lambda´´ of N = 20 components contains the number of processes (balls) which is created in a cascade process. The value ´´lambda[i]´ is not necessarily an integer
+The array ``lambda`` of N = 20 components contains the number of processes (balls) which is created in a cascade process. The value ``lambda[i]`` is not necessarily an integer
 The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of [this article](https://www.nature.com/articles/s41598-018-28962-1).
 
 
