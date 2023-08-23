@@ -14,6 +14,17 @@ In order to create an algorithm for the the reduction of the sample space we can
 
 ![](/images/biaseddice.png)
 
+The function ``ssrp`` implement the cascade SSRP process
+```
+std::vector<int> ssrp(
+    int numberOfStates, 
+    std::vector<int>& frequencies,
+    std::vector<double>& lambda,
+    std::mt19937& generator	
+){
+    /* CODE */;
+}
+```
 The throwing of a biased dice is given by the function
 ```
 int biasedCoin(double bias, std::mt19937& generator){
@@ -28,7 +39,29 @@ std::vector<int> slice(std::vector<int>& v, int k){
     return output;
 }
 ```
-The array ``lambda`` of N = 20 components contains the number of processes (balls) which is created in a cascade process. The value ``lambda[i]`` is not necessarily an integer
+The array ``lambda`` of N = 20 components contains the number of processes (balls) which is created in a cascade process. For the state ``k``, the value ``lambda[k - 1]`` is not necessarily an integer, the decimal part ``delta`` given by
+```
+double delta = lambda[k - 1] - std::floor(lambda[k - 1]);
+```
+and represent the probability of a biased coin given by the function
+```
+int biasedCoin(double bias, std::mt19937& generator){
+    std::bernoulli_distribution flip(bias);
+    return flip(generator);
+}
+```
+The throwing of that biased coin will create ``mu`` porcesses
+```
+int mu = (biasedCoin(delta, generator) == 1) ? std::floor(lambda[k - 1]) + 1 : std::floor(lambda[k - 1]);
+```
+which will be pushed to a stack
+```
+for(int i = 0; i < mu; i++){
+		stack.push_front(k);
+}
+```
+Every time we reach ``k = 1`` the algorithm will check the stack to see if it is empty, in which case the function ``ssrp`` will stop. If the stack is not empty, we will pop a new value ``k` from the top of the stack an continue. 
+
 The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of [this article](https://www.nature.com/articles/s41598-018-28962-1).
 
 
