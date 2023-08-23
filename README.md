@@ -7,7 +7,7 @@ Sample Space Reducing Processes (SSRPs) reduce their sample space as they progre
 * In (a) a ball bounces downwards a staircase with N = 10 stairs (states). At each timestep the ball randomly choses one of the stairs below its current position. In this
 picture the prior probability q_i. Once the ball reaches the lowest step, it is restarted.
 
-* In (b) we see the *cascading picture*,  whenever a ball hits a state i, it multiplies and creates λ(i) − 1 new balls, that start their downward moves independently. 
+* In (b) we see the *cascading picture*,  whenever a ball hits a state i, it multiplies and creates λ(i) − 1 balls, that start their downward moves independently. 
 
 ## Algorithm
 The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of [this article](https://www.nature.com/articles/s41598-018-28962-1).
