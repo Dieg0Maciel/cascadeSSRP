@@ -60,9 +60,18 @@ for(int i = 0; i < mu; i++){
 		stack.push_front(k);
 }
 ```
-Every time we reach ``k = 1`` the algorithm will check the stack to see if it is empty, in which case the function ``ssrp`` will stop. If the stack is not empty, we will pop a new value ``k` from the top of the stack an continue. 
-
-The file "cascadeSSRP.cpp" contains a numerical simulation of a cascade SSRP which is executed by the script "simulation.py". It compares the numerical simulation with theoretical predictions reproducing the results in Figure 2(b) of [this article](https://www.nature.com/articles/s41598-018-28962-1).
+Every time we reach ``k = 1`` the algorithm will check the stack to see if it is empty, in which case the function ``ssrp`` will stop. If the stack is not empty, we will pop a new value ``k`` from the top of the stack an continue. The simulation is implemented by the function ``simulation`` which runs the ``ssrp`` function ``numberOfRestarts``
+```
+std::vector<int> simulation(
+    int numberOfStates, 
+    int numberOfRestarts,
+    std::vector<int>& frequencies,
+    std::vector<double>& lambda
+){
+    /*CODE*/
+}
+```
+The number of visits for each state is sored in the array ``counts``. The file "cascadeSSRP.cpp" contains the numerical simulation which is executed by the script "simulation.py". It compares our numerical simulation with the theoretical predictions reproducing the results in Figure 2(b) of [`[3]`](https://www.nature.com/articles/s41598-018-28962-1).
 
 
 ## References
