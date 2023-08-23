@@ -71,7 +71,7 @@ std::vector<int> simulation(
     /*CODE*/
 }
 ```
-The number of visits for each state is sored in the array ``counts``. The file "cascadeSSRP.cpp" contains the numerical simulation which is executed by the script "simulation.py". It compares our numerical simulation with the theoretical predictions reproducing the results in Figure 2(b) of [`[3]`](https://www.nature.com/articles/s41598-018-28962-1).
+The number of visits for each state is sored in the array ``counts``. Since each SSRP process is independent we can paralelize this algoritm with the OpenMP library. The file "cascadeSSRP.cpp" contains the numerical simulation which is executed by the script "simulation.py". It compares our numerical simulation with the theoretical predictions reproducing the results in Figure 2(b) of [`[3]`](https://www.nature.com/articles/s41598-018-28962-1).
 
 
 ## References
